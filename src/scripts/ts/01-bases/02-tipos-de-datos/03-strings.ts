@@ -1,0 +1,31 @@
+/*
+    ---------------------------------------------------------------------------------
+    ----------  udemy.antonydev.tech/  ----------------------------------------------
+    ----------  /cursos/  -----------------------------------------------------------
+    ----------  /typescript-completa-guia-manual-de-mano/  --------------------------
+    ----------  /src/scripts/ts/01-bases-de-typescript/02-tipos-de-datos/  ----------
+    ----------  /03-strings.ts  -----------------------------------------------------
+    ---------------------------------------------------------------------------------
+*/
+
+
+(() => {
+
+    console.log('\n');
+    console.warn('-----  03-strings.ts  -----');
+    console.log('\n');
+
+
+    const batman: string = 'Batman';
+    const linternaVerde: string = "Linterna's Verde";
+    const volcanNegro: string = `Héroe Volcán Negro`;
+    const abc: number = 123;
+    
+    console.log({ batman, linternaVerde, volcanNegro, abc });
+    
+    //  -----  Métodos de String  -----
+    console.log('\n', batman.toUpperCase());
+    console.log(` I'm ${batman}, ${abc.toString()} `);
+    console.log( batman[11]?.toUpperCase() || 'No existe el héroe' );
+    
+})();

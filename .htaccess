@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /cursos/typescript-completa-guia-manual-de-mano/
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /cursos/typescript-completa-guia-manual-de-mano/index.html [L]
+</IfModule>
+

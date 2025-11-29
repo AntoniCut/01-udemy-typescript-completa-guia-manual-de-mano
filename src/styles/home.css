@@ -1,0 +1,21 @@
+/*
+    ---------------------------------------------------------------------------
+    ----------  /udemy.antonydev.tech/  ---------------------------------------
+    ----------  /cursos/  -----------------------------------------------------
+    ----------  /typescript-completa-guia-manual-de-mano/  --------------------
+    ----------  /src/styles/  -------------------------------------------------
+    ----------  /home.css  ----------------------------------------------------
+    ---------------------------------------------------------------------------
+*/
+
+
+.main__hero {
+    width: 100%;
+    max-width: 120rem;
+    aspect-ratio: 16/9;
+    background-image: url('/cursos/typescript-completa-guia-manual-de-mano/assets/img/home-typescript.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

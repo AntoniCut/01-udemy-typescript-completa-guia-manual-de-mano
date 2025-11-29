@@ -1,0 +1,21 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /udemy.antonydev.tech/  -----------------------------------------
+    ----------  /cursos/  -------------------------------------------------------
+    ----------  /typescript-completa-guia-manual-de-mano/  ----------------------
+    ----------  /src/styles/01-bases-de-typescript/02-tipos-de-datos/  ----------
+    ----------  /09-never.css  -------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.main__hero {
+    width: 100%;
+    max-width: 120rem;
+    aspect-ratio: 16/9;
+    background-image: url('/cursos/typescript-completa-guia-manual-de-mano/assets/img/01-bases-de-typescript/02-tipos-de-datos/09-never.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

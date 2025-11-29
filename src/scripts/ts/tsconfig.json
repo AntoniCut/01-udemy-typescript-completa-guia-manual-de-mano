@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+
+    "rootDir": "./",        // <- Carpeta donde están los TS
+    "outDir": "../js",      // <- Carpeta destino donde irá la misma estructura
+
+    "strict": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+
+  "include": [
+    "./**/*.ts"
+  ]
+}
