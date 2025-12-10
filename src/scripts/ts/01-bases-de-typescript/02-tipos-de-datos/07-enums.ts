@@ -10,7 +10,8 @@
 
 
 (() => {
-
+    
+    
     console.log('\n');
     console.warn('-----  07-enums.ts  -----');
     console.log('\n');
@@ -25,10 +26,9 @@
 
     console.log('\n', { AudioLevel });
     
-
-    let currentAudioMin = AudioLevel.min
+    let currentAudioMin = AudioLevel.min;
     console.log('\n', { currentAudioMin });
-
+    
     let currentAudioMedium = AudioLevel.medium;
     console.log('\n', { currentAudioMedium });
 

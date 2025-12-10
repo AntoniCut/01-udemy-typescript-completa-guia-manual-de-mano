@@ -27,7 +27,8 @@ export const SpaBasesTypescript = () => {
     
     //  ----------  Documento Cargado  ----------
     console.log('\n');
-    console.warn('-----  spa-bases-typescript.js  -----');
+    console.warn('-----  spa-bases-typescript.js - Cargado  -----');
+    console.log('\n');
        
     
     //  ----------  Arrays con la informacion del contenido a cargar de las rutas del proyecto ----------
@@ -51,17 +52,13 @@ export const SpaBasesTypescript = () => {
      * @type {ConfigOptionsSPA}
      */
 
-    const configOptions = {
+    const configOptionsSpa = {
         routes: allRoutes,
         base: '/cursos/typescript-completa-guia-manual-de-mano/',
-        layoutHeaderElement: '#layoutHeader',
-        layoutNavbarElement: '#layoutNavbar',
-        layoutMainElement: '#layoutMain',
-        layoutFooterElement: '#layoutFooter',
     }
 
 
     //  ----------  Invocamos el Plugins  --  content-loader-spa.js  ----------
-    spaLoaderContentHtml(configOptions);
+    spaLoaderContentHtml(configOptionsSpa);
 
 }

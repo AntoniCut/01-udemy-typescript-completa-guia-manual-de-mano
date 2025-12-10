@@ -17,7 +17,7 @@
     console.log('\n');
 
 
-    //  -----  Tipos  -----
+    //  -----  String  -----
     const batman: string = 'Bruce';
     const superman: string = 'Clark';
 

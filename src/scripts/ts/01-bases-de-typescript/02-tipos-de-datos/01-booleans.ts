@@ -9,7 +9,9 @@
 */
 
 
+
 (() => {
+
 
     console.clear();
     console.log('\n');
@@ -24,17 +26,16 @@
     console.log({ isSuperman, isBatman, isSpiderman });
 
 
-    isSuperman = true && false;
-    isBatman = true && true;
-    isSpiderman = false && false;
+    isSuperman = true && false;         //  false
+    isBatman = true && true;            //  true  
+    isSpiderman = false && false;       //  false   
 
     console.log('\n', { isSuperman, isBatman, isSpiderman });
-
     
     //isSuperman = ( isBatman) ? 'ABC' : 'XYZ';
+
     isSuperman = (isBatman) ? true : false;
     console.log({ isSuperman });
 
+
 })();
-
-

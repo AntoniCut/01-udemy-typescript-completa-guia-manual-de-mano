@@ -9,41 +9,86 @@
 */
 
 
-export {};
+
+//  ----------  Esto asegura que VS Code lo trate como módulo  ----------
+export { };
+
 
 
 /**
- * Representa una ruta dentro del SPA. Define los archivos HTML de layout,
- * fragmentos Shiki, metadatos, assets, estilos y scripts a cargar.
+ * -------------------------------
+ * -----  `RouteComponents`  -----
+ * -------------------------------
+ * 
+ * - Mapa de componentes HTML a cargar dinámicamente.
+ * - Cada valor puede ser string o undefined.
+ *
+ * @typedef {Record<string, string|undefined>} RouteComponents
+ * 
+ */
+
+
+/**
+ * --------------------------
+ * -----  `RouteStyle` -----
+ * --------------------------
+ * 
+ * - Representa una hoja de estilos que debe cargarse dinámicamente.
+ * 
+ * @typedef {Object} RouteStyle
+ * @property {string} href - Ruta absoluta o relativa del archivo CSS.
+ * 
+ */
+
+
+/**
+ * ---------------------------
+ * -----  `RouteScript`  -----
+ * ---------------------------
+ *  
+ * - Representa un script que debe cargarse dinámicamente.
+ * 
+ * @typedef {Object} RouteScript
+ * @property {string} src - Ruta absoluta o relativa del archivo JS.
+ * 
+ */
+
+
+
+
+/**
+ * ---------------------
+ * -----  `Route`  -----
+ * ---------------------
+ * 
+ * - Objeto de configuración de cada ruta del SPA.
  *
  * @typedef {Object} Route
  *
- * @property {string} id - Identificador único de la ruta.
- * @property {string} path - Path de la URL usado para navegación dentro del SPA.
- * 
- * @property {string} headerUrl - Ruta al fragmento HTML que se insertará en el header.
- * @property {string} navbarUrl - Ruta al fragmento HTML que se insertará en la navbar.
- * @property {string} mainUrl - Ruta al fragmento HTML que se insertará en el main.
- * @property {string} footerUrl - Ruta al fragmento HTML que se insertará en el footer.
+ * @property {string} id
+ *   Identificador único de la ruta.
  *
- * @property {string[]} MarkdownShikiHtml 
- * - Lista de rutas a archivos HTML generados por Shiki (normalmente .ts.html o .js.html)
- *   que deben renderizarse en la vista.
+ * @property {string} path
+ *   URL interna asociada a la vista.
  *
- * @property {string} favicon - Ruta al favicon específico de la ruta.
- * @property {string} pageTitle - Título de la pestaña del navegador.
- * @property {string} headerTitle - Título visible que se muestra en el header de la página.
+ * @property {string} pageTitle
+ *   Título mostrado en la etiqueta `<title>`.
  *
- * @property {string} [styles] - Ruta opcional a un archivo CSS que se debe cargar dinámicamente.
+ * @property {string} headerTitle
+ *   Título que se mostrará dentro del layout-header.
  *
- * @property {Array<{
-     * src: string,
-     * isModule?: boolean,
-     * exportFunctionName?: string
-     * }>} scripts
- *   Arreglo de scripts que se deben cargar dinámicamente en la ruta.
- *   Puede incluir scripts normales (JS) o módulos ES con funciones a ejecutar.
+ * @property {string} favicon
+ *   Ruta del favicon específico de la vista.
  *
- * @property {Object.<string, any>} [meta]
- *   Objeto opcional con metadata personalizada para la ruta.
+ * @property {RouteComponents} components
+ *   Mapa selector → URL de componente HTML.
+ *
+ * @property {string[]} MarkdownShikiHtml
+ *   Rutas a los archivos .html generados por Shiki para mostrar código.
+ *
+ * @property {RouteStyle[]|null} styles
+ *   Lista de hojas CSS asociadas a la vista (opcional).
+ *
+ * @property {RouteScript[]|null} scripts
+ *   Lista de scripts a cargar dinámicamente (opcional).
  */

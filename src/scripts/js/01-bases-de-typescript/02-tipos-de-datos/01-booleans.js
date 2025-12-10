@@ -1,14 +1,13 @@
 // @ts-nocheck
 "use strict";
 /*
-    -----------------------------------------------------------------
-    ----------  udemy.antonydev.tech/  ------------------------------
-    ----------  /cursos-udemy/  -------------------------------------
-    ----------  /typescript-completa-guia-manual-de-mano/  ----------
-    ----------  /01-bases-de-typescript/  ---------------------------
-    ----------  /src/scripts/ts/02-tipos-de-datos/  -----------------
-    ----------  /01-booleans---.ts  ------------------------------------
-    -----------------------------------------------------------------
+    ---------------------------------------------------------------------------------
+    ----------  udemy.antonydev.tech/  ----------------------------------------------
+    ----------  /cursos/  -----------------------------------------------------------
+    ----------  /typescript-completa-guia-manual-de-mano/  --------------------------
+    ----------  /src/scripts/ts/01-bases-de-typescript/02-tipos-de-datos/  ----------
+    ----------  /01-booleans.ts  ----------------------------------------------------
+    ---------------------------------------------------------------------------------
 */
 (() => {
     console.clear();
@@ -19,9 +18,9 @@
     let isBatman = false;
     let isSpiderman = true;
     console.log({ isSuperman, isBatman, isSpiderman });
-    isSuperman = true && false;
-    isBatman = true && true;
-    isSpiderman = false && false;
+    isSuperman = true && false; //  false
+    isBatman = true && true; //  true  
+    isSpiderman = false && false; //  false   
     console.log('\n', { isSuperman, isBatman, isSpiderman });
     //isSuperman = ( isBatman) ? 'ABC' : 'XYZ';
     isSuperman = (isBatman) ? true : false;

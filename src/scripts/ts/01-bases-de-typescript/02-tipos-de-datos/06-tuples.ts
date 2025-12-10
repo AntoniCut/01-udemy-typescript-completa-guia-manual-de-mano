@@ -9,6 +9,7 @@
 */
 
 
+
 (() => {
 
     console.log('\n');
@@ -16,11 +17,12 @@
     console.log('\n');
 
     //  -----  Tuplas  -----
-    const hero: [string, number, boolean] = ['Dr. Strange', 100, true];
+    const hero: [string, number, boolean, string[]] = ['Dr. Strange', 100, true, ['Ironman']];
 
     hero[0] = 'Ironman';
     hero[1] = 50;
     hero[2] = false;
+    hero[3] = ['Stark', 'Spiderman'];
 
     console.log({ hero });
 

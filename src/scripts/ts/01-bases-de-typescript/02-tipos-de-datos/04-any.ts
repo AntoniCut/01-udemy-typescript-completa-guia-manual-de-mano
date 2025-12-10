@@ -9,22 +9,28 @@
 */
 
 
+
 (() => {
+
 
     console.log('\n');
     console.warn('-----  04-any.ts  -----');
     console.log('\n');
 
-
+    //  -----  any  -----
     let avenger: any = 123;
+    
+    //  -----  boolean  -----
     const exist = false;
+
+    //  -----  string  -----
     let power: string = 'power';
 
     console.log({ avenger, exist, power });
 
     //  -----  casteo, pasar a string  -----
-    //console.log('(avenger as string).charAt(0)', (avenger as string).charAt(0) );
-    console.log('(avenger as string).charAt(0)', String(avenger).charAt(0));
+    //console.log('(avenger as string).charAt(0)', (avenger as string).charAt(0));
+    console.log('String(avenger).charAt(0)', String(avenger).charAt(0));
 
 
     //  -----  cambia a string  -----

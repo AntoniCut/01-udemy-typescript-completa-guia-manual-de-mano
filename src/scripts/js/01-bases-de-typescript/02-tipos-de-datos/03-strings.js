@@ -1,22 +1,23 @@
 // @ts-nocheck
 "use strict";
 /*
-    -----------------------------------------------------------------
-    ----------  udemy.antonydev.tech/  ------------------------------
-    ----------  /cursos-udemy/  -------------------------------------
-    ----------  /typescript-completa-guia-manual-de-mano/  ----------
-    ----------  /01-bases-de-typescript/  ---------------------------
-    ----------  /src/scripts/ts/02-tipos-de-datos/  -----------------
-    ----------  /03-strings.ts  -------------------------------------
-    -----------------------------------------------------------------
+    ---------------------------------------------------------------------------------
+    ----------  udemy.antonydev.tech/  ----------------------------------------------
+    ----------  /cursos/  -----------------------------------------------------------
+    ----------  /typescript-completa-guia-manual-de-mano/  --------------------------
+    ----------  /src/scripts/ts/01-bases-de-typescript/02-tipos-de-datos/  ----------
+    ----------  /03-strings.ts  -----------------------------------------------------
+    ---------------------------------------------------------------------------------
 */
 (() => {
     console.log('\n');
     console.warn('-----  03-strings.ts  -----');
     console.log('\n');
+    //  -----  3 formas de crear strings  -----
     const batman = 'Batman';
     const linternaVerde = "Linterna's Verde";
-    const volcanNegro = `Héroe Volcán Negro`;
+    const volcanNegro = `Héroe: Volcán Negro`;
+    //  -----  number  -----
     const abc = 123;
     console.log({ batman, linternaVerde, volcanNegro, abc });
     //  -----  Métodos de String  -----

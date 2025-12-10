@@ -9,7 +9,9 @@
 */
 
 
+
 (() => {
+
 
     console.log('\n');
     console.warn('-----  02-numbers.ts  -----');
