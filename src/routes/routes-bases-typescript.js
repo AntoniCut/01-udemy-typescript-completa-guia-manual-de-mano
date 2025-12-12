@@ -23,6 +23,9 @@
 
 export const routesBasesTypescript = [
 
+
+    //  -----  Ruta Home  -----
+    
     {
         id: 'home',
         favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/typescript-favicon.ico',
@@ -42,6 +45,8 @@ export const routesBasesTypescript = [
         scripts: []
     },
 
+
+    //  -----  Rutas de Introducción  -----
 
     {
         id: 'inferirTipos',
@@ -66,6 +71,9 @@ export const routesBasesTypescript = [
             { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/01-introduccion/inferir-tipos.js' }
         ]
     },
+
+
+    //  -----  Rutas de Tipos de Datos  -----
 
     {
         id: 'booleans',
@@ -315,7 +323,7 @@ export const routesBasesTypescript = [
     {
         id: 'tareaTiposDeDatos',
         favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
-        pageTitle: 'Null & Undefined en TypeScript',
+        pageTitle: 'Tarea Tipos de Datos en TypeScript',
         path: 'bases-de-typescript/tipos-de-datos/tarea-tipos-de-datos',
         components: {
             "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
@@ -328,7 +336,7 @@ export const routesBasesTypescript = [
             '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/02-tipos-de-datos/11-tarea-tipos-de-datos-js.html'
         ],
         
-        headerTitle: 'Null & Undefined en TypeScript',
+        headerTitle: 'Tarea Tipos de Datos en TypeScript',
         styles: [
             { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/02-tipos-de-datos/11-tarea-tipos-de-datos.css' },
         ],
@@ -337,6 +345,179 @@ export const routesBasesTypescript = [
         ]
     },
 
+
+    //  -----  Rutas de Funciones  -----
+
+    {
+        id: 'functions',
+        favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
+        pageTitle: 'Funciones en TypeScript',
+        path: 'bases-de-typescript/funciones/funciones-basicas',
+        components: {
+            "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
+            "layoutNavbar": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-navbar.html',
+            "layoutMain": '/cursos/typescript-completa-guia-manual-de-mano/src/pages/01-bases-de-typescript/03-funciones/01-functions.html',
+            "layoutFooter": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-footer.html',
+        },
+        MarkdownShikiHtml: [
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/01-functions-ts.html',
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/01-functions-js.html'
+        ],
+        headerTitle: 'Funciones en TypeScript',
+        styles: [
+            { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/03-funciones/01-functions.css' },
+        ],
+        scripts: [
+            { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/03-funciones/01-functions.js' },
+        ]
+    },
+
+    {
+        id: 'args-required',
+        favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
+        pageTitle: 'Argumentos Requeridos en Funciones en TypeScript',
+        path: 'bases-de-typescript/funciones/argumentos-requeridos',
+        components: {
+            "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
+            "layoutNavbar": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-navbar.html',
+            "layoutMain": '/cursos/typescript-completa-guia-manual-de-mano/src/pages/01-bases-de-typescript/03-funciones/02-args-required.html',
+            "layoutFooter": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-footer.html',
+        },
+        MarkdownShikiHtml: [
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/02-args-required-ts.html',
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/02-args-required-js.html'
+        ],
+        headerTitle: 'Argumentos Requeridos en Funciones en TypeScript',
+        styles: [
+            { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/03-funciones/02-args-required.css' },
+        ],
+        scripts: [
+            { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/03-funciones/02-args-required.js' },
+        ]
+    },
+
+    {
+        id: 'args-optional',
+        favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
+        pageTitle: 'Argumentos Opcionales en Funciones en TypeScript',
+        path: 'bases-de-typescript/funciones/argumentos-opcionales',
+        components: {
+            "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
+            "layoutNavbar": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-navbar.html',
+            "layoutMain": '/cursos/typescript-completa-guia-manual-de-mano/src/pages/01-bases-de-typescript/03-funciones/03-args-optional.html',
+            "layoutFooter": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-footer.html',
+        },
+        MarkdownShikiHtml: [
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/03-args-optional-ts.html',
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/03-args-optional-js.html'
+        ],
+        headerTitle: 'Argumentos Opcionales en Funciones en TypeScript',
+        styles: [
+            { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/03-funciones/03-args-optional.css' },
+        ],
+        scripts: [
+            { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/03-funciones/03-args-optional.js' },
+        ]
+    },
+
+
+    {
+        id: 'args-default',
+        favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
+        pageTitle: 'Argumentos por Defecto en Funciones en TypeScript',
+        path: 'bases-de-typescript/funciones/argumentos-por-defecto',
+        components: {
+            "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
+            "layoutNavbar": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-navbar.html',
+            "layoutMain": '/cursos/typescript-completa-guia-manual-de-mano/src/pages/01-bases-de-typescript/03-funciones/04-args-default.html',
+            "layoutFooter": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-footer.html',
+        },
+        MarkdownShikiHtml: [
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/04-args-default-ts.html',
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/04-args-default-js.html'
+        ],
+        headerTitle: 'Argumentos por Defecto en Funciones en TypeScript',
+        styles: [
+            { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/03-funciones/04-args-default.css' },
+        ],
+        scripts: [
+            { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/03-funciones/04-args-default.js' },
+        ]
+    },
+
+    {
+        id: 'args-rest',
+        favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
+        pageTitle: 'Argumentos Rest en Funciones en TypeScript',
+        path: 'bases-de-typescript/funciones/argumentos-rest',
+        components: {
+            "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
+            "layoutNavbar": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-navbar.html',
+            "layoutMain": '/cursos/typescript-completa-guia-manual-de-mano/src/pages/01-bases-de-typescript/03-funciones/05-args-rest.html',
+            "layoutFooter": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-footer.html',
+        },
+        MarkdownShikiHtml: [
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/05-args-rest-ts.html',
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/05-args-rest-js.html'
+        ],
+        headerTitle: 'Argumentos Rest en Funciones en TypeScript',
+        styles: [
+            { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/03-funciones/05-args-rest.css' },
+        ],
+        scripts: [
+            { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/03-funciones/05-args-rest.js' },
+        ]
+    },
+
+    {
+        id: 'function-type',
+        favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
+        pageTitle: 'Tipos de Retorno en Funciones en TypeScript',
+        path: 'bases-de-typescript/funciones/tipos-de-funciones',
+        components: {
+            "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
+            "layoutNavbar": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-navbar.html',
+            "layoutMain": '/cursos/typescript-completa-guia-manual-de-mano/src/pages/01-bases-de-typescript/03-funciones/06-function-type.html',
+            "layoutFooter": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-footer.html',
+        },
+        MarkdownShikiHtml: [
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/06-function-type-ts.html',
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/06-function-type-js.html'
+        ],
+        headerTitle: 'Tipos de Retorno en Funciones en TypeScript',
+        styles: [
+            { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/03-funciones/06-function-type.css' },
+        ],
+        scripts: [
+            { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/03-funciones/06-function-type.js' },
+        ]
+    },
+
+    {
+        id: 'tarea-funciones',
+        favicon: '/cursos/typescript-completa-guia-manual-de-mano/assets/favicon/javascript-favicon.ico',
+        pageTitle: 'Tarea Funciones en TypeScript',
+        path: 'bases-de-typescript/funciones/tarea-funciones',
+        components: {
+            "layoutHeader": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-header.html',
+            "layoutNavbar": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-navbar.html',
+            "layoutMain": '/cursos/typescript-completa-guia-manual-de-mano/src/pages/01-bases-de-typescript/03-funciones/07-tarea-funciones.html',
+            "layoutFooter": '/cursos/typescript-completa-guia-manual-de-mano/src/components/layouts/layout-footer.html',
+        },
+        MarkdownShikiHtml: [
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/07-tarea-funciones-ts.html',
+            '/cursos/typescript-completa-guia-manual-de-mano/src/markdown-shiki/01-bases-de-typescript/03-funciones/07-tarea-funciones-js.html'
+        ],
+        headerTitle: 'Tarea Funciones en TypeScript',
+        styles: [
+            { href: '/cursos/typescript-completa-guia-manual-de-mano/src/styles/01-bases-de-typescript/03-funciones/07-tarea-funciones.css' },
+        ],
+        scripts: [
+            { src: '/cursos/typescript-completa-guia-manual-de-mano/src/scripts/js/01-bases-de-typescript/03-funciones/07-tarea-funciones.js' },
+        ]
+    },
+
+    
 
 
 ];

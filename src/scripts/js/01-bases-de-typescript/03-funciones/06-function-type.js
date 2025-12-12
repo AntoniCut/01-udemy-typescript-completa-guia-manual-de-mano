@@ -1,0 +1,39 @@
+"use strict";
+/*
+    ----------------------------------------------------------------------------
+    ----------  udemy.antonydev.tech/  -----------------------------------------
+    ----------  /cursos/  ------------------------------------------------------
+    ----------  /typescript-completa-guia-manual-de-mano/  ---------------------
+    ----------  /src/scripts/ts/01-bases-de-typescript/03-funciones/  ----------
+    ----------  /06-function-type.ts  ------------------------------------------
+    ----------------------------------------------------------------------------
+*/
+(() => {
+    console.clear();
+    console.log('\n');
+    console.warn('-----  06-function-type.ts  -----');
+    console.log('\n');
+    //  -----  Función que recibe dos números, los suma y retorna un número  -----
+    const addNumbers = (a, b) => a + b;
+    //  -----  Función que recibe un string y retorna un string  -----
+    const greet = (name) => `Hola ${name}`;
+    //  -----  Función que no retorna nada (void)  -----
+    const saveTheWorld = () => 'El mundo esta salvado!';
+    //  -----  Definición de un tipo de función  -----
+    let myFunction;
+    let myFunctionNumber;
+    //  -----  asigna un número a la variable  -----
+    myFunction = 10;
+    console.log('myFunction:', myFunction);
+    //  -----  pasa la función por referencia  -----
+    myFunctionNumber = addNumbers;
+    console.log(myFunctionNumber);
+    //  -----  invoca la función  -----
+    console.log('myFunction(1, 2):', myFunctionNumber(1, 2));
+    //  -----  invoca la función  -----
+    myFunction = greet;
+    console.log(myFunction('Antonio'));
+    //  -----  invoca la función  -----
+    myFunction = saveTheWorld;
+    console.log(myFunction());
+})();

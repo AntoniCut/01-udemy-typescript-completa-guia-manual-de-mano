@@ -1,0 +1,42 @@
+<!--
+    --------------------------------------------------------------------------------
+    ----------  /udemy.antonydev.tech/ ---------------------------------------------
+    ----------  /cursos/  ----------------------------------------------------------
+    ----------  /typescript-completa-guia-manual-de-mano/  -------------------------
+    ----------  /src/markdown-shiki/01-bases-de-typescript/03-funciones/  ----------
+    ----------  /02-args-required-js.html  -----------------------------------------
+    --------------------------------------------------------------------------------
+-->
+
+
+<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code class="language-js"><span class="line"><span style="color: #CE9178">&quot;use strict&quot;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #6A9955">/*</span></span>
+<span class="line"><span style="color: #6A9955">    ----------------------------------------------------------------------------</span></span>
+<span class="line"><span style="color: #6A9955">    ----------  udemy.antonydev.tech/  -----------------------------------------</span></span>
+<span class="line"><span style="color: #6A9955">    ----------  /cursos/  ------------------------------------------------------</span></span>
+<span class="line"><span style="color: #6A9955">    ----------  /typescript-completa-guia-manual-de-mano/  ---------------------</span></span>
+<span class="line"><span style="color: #6A9955">    ----------  /src/scripts/ts/01-bases-de-typescript/03-funciones/  ----------</span></span>
+<span class="line"><span style="color: #6A9955">    ----------  /02-args-required.js  ------------------------------------------</span></span>
+<span class="line"><span style="color: #6A9955">    ----------------------------------------------------------------------------</span></span>
+<span class="line"><span style="color: #6A9955">*/</span></span>
+<span class="line"><span style="color: #D4D4D4">(() </span><span style="color: #569CD6">=&gt;</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">clear</span><span style="color: #D4D4D4">();</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;</span><span style="color: #D7BA7D">\n</span><span style="color: #CE9178">&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">warn</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;-----  02-args-required.js  -----&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;</span><span style="color: #D7BA7D">\n</span><span style="color: #CE9178">&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #6A9955">//  -----  Función con argumentos requeridos  -----</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">fullName</span><span style="color: #D4D4D4"> = (</span><span style="color: #9CDCFE">firsName</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">lastName</span><span style="color: #D4D4D4">) </span><span style="color: #569CD6">=&gt;</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">`</span><span style="color: #569CD6">${</span><span style="color: #9CDCFE">firsName</span><span style="color: #569CD6">}</span><span style="color: #CE9178"> </span><span style="color: #569CD6">${</span><span style="color: #9CDCFE">lastName</span><span style="color: #569CD6">}</span><span style="color: #CE9178">`</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">    };</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #6A9955">//  -----  Llamadas a la función  -----</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">name1</span><span style="color: #D4D4D4"> = </span><span style="color: #DCDCAA">fullName</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;Tony&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #CE9178">&#39;Stark&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">name2</span><span style="color: #D4D4D4"> = </span><span style="color: #DCDCAA">fullName</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;Tony&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #569CD6">true</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">({ </span><span style="color: #9CDCFE">name1</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">name2</span><span style="color: #D4D4D4"> });</span></span>
+<span class="line"><span style="color: #D4D4D4">})();</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+
+
+
+
+
